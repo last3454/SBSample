@@ -23,7 +23,7 @@ public class SwaggerConfig {
 		return new OpenAPI()
 				.info(new Info()
 						.title("MyBeaker API")
-						.description("아모레퍼시픽 MyBeaker API 명세서 입니다.")
+						.description("Sample API 명세서 입니다.")
 						.version("0.1"));
 	}
 }
