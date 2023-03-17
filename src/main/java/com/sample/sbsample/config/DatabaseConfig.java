@@ -20,11 +20,7 @@ import org.springframework.transaction.PlatformTransactionManager;
 import com.zaxxer.hikari.HikariDataSource;
 
 @Configuration
-@EnableJpaRepositories(
-    basePackages = "com.amore.mybeaker.dbbase.repo",
-    entityManagerFactoryRef = "primaryEntityManagerFactory",
-    transactionManagerRef = "primaryTransactionManager"
-)
+@EnableJpaRepositories(basePackages = "com.sample.sbsample.dbbase.repo",entityManagerFactoryRef = "primaryEntityManagerFactory",transactionManagerRef = "primaryTransactionManager")
 public class DatabaseConfig {
 
     @Primary
@@ -37,8 +33,7 @@ public class DatabaseConfig {
     @Primary
     @Bean
     @ConfigurationProperties("spring.datasource.configuration")
-    public DataSource primaryDataSource(
-            @Qualifier("primaryDataSourceProperties") DataSourceProperties dataSourceProperties) {
+    public DataSource primaryDataSource( @Qualifier("primaryDataSourceProperties") DataSourceProperties dataSourceProperties) {
         String password = new String(Base64.getDecoder().decode(dataSourceProperties.getPassword()));
         dataSourceProperties.setPassword(password);
         return dataSourceProperties.initializeDataSourceBuilder().type(HikariDataSource.class).build();
@@ -49,7 +44,7 @@ public class DatabaseConfig {
     public LocalContainerEntityManagerFactoryBean primaryEntityManagerFactory(EntityManagerFactoryBuilder builder,@Qualifier("primaryDataSource") DataSource dataSource) {
         return builder
                     .dataSource(dataSource)
-                    .packages("com.amore.mybeaker.dbbase.entity")
+                    .packages("com.sample.sbsample.dbbase.entity")
                     .persistenceUnit("primaryEntityManager")
                     .build();
     }

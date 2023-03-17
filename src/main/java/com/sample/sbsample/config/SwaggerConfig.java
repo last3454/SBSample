@@ -22,7 +22,7 @@ public class SwaggerConfig {
 	public OpenAPI springSOpenAPI() {
 		return new OpenAPI()
 				.info(new Info()
-						.title("MyBeaker API")
+						.title("SBSample API")
 						.description("Sample API 명세서 입니다.")
 						.version("0.1"));
 	}

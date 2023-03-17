@@ -31,7 +31,7 @@ import lombok.NoArgsConstructor;
 public class UserEntity {
 
     @Id
-    @GenericGenerator(name = "user_cd", strategy = "com.amore.mybeaker.utils.CustomIdGenerator",
+    @GenericGenerator(name = "user_cd", strategy = "com.sample.sbsample.utils.CustomIdGenerator",
     parameters = {@Parameter(name = "seqName", value = "USER_MST_SEQ")})
     @GeneratedValue(generator = "user_cd")
     private String userCd;

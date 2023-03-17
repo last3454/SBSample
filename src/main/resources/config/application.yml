@@ -7,7 +7,7 @@ server:
 
 spring:
   profiles:
-    #default:local
+    default: local
     active: local
     #maven에 설정한 profiles 가져오고 표시해 놓은 부분입니다.
     #active: @spring.profiles.active@
@@ -15,3 +15,7 @@ spring:
     multipart:
       max-file-size: 100MB
       max-request-size: 100MB
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
