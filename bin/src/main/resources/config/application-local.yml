@@ -1,0 +1,43 @@
+server:
+  type: local
+  port: 9080
+  servlet:
+    context-path: /
+
+spring:
+  jwt:
+    headerKey: authorization
+    secret: amore!@#
+    before_len: 8
+  api-key: amore_grp123!@#
+  aes.key: ishift7150tfihsi
+  jpa:
+    open-in-view: false
+    database-platform: org.hibernate.dialect.Oracle10gDialect
+    show-sql: true
+
+    properties:
+      hibernate:
+        ddl-auto: none
+        physical_naming_strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+        implicit_naming_strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+        jdbc.time_zone: Asia/Seoul
+  datasource:
+    #type: com.zaxxer.hikari.HikariDataSource
+    # driver-class-name: org.postgresql.Driver
+    #driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    driver-class-name: 
+    url: 
+    #jdbc-url: 
+    username: 
+    password: 
+    maximum-pool-size: 2
+
+logging:
+  level:
+    org:
+      springframework:
+        web: error
+        security: error
+    '[com.aplab.apsite]': debug
+    '[com.aplab.apsite.mapper]': error

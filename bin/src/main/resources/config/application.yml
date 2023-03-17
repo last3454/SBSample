@@ -1,0 +1,17 @@
+#공통으로 되는 내용만 정의하는 파일입니다.
+
+server:
+  port: 9000
+  servlet:
+    context-path: /
+
+spring:
+  profiles:
+    #default:local
+    active: local
+    #maven에 설정한 profiles 가져오고 표시해 놓은 부분입니다.
+    #active: @spring.profiles.active@
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
