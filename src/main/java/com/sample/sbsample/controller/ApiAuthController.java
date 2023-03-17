@@ -18,4 +18,12 @@ public class ApiAuthController {
 		System.out.println("######################");
 		return null;
 	}
+	
+	@GetMapping("sssss")
+	public <T> ResponseEntity<T> sssss(HashMap<String,String> paramasMap){		
+		System.out.println("######################");
+		System.out.println("신난다 sssssssssssssss 아주 좋아!!!!!!!!!");
+		System.out.println("######################");
+		return null;
+	}
 }

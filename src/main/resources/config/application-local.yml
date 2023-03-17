@@ -7,32 +7,28 @@ server:
 spring:
   jwt:
     headerKey: authorization
-    secret: amore!@#
+    secret: yhchoi!@#
     before_len: 8
-  api-key: amore_grp123!@#
-  aes.key: ishift7150tfihsi
   jpa:
     open-in-view: false
-    database-platform: org.hibernate.dialect.Oracle10gDialect
-    show-sql: true
-
+    database-platform: org.hibernate.dialect.MariaDB106Dialect
     properties:
       hibernate:
+        format_sql: true
+        show_sql: true      
         ddl-auto: none
         physical_naming_strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
-        implicit_naming_strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+        implicit_naming_strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy      
         jdbc.time_zone: Asia/Seoul
   datasource:
-    #type: com.zaxxer.hikari.HikariDataSource
-    # driver-class-name: org.postgresql.Driver
-    #driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
-    driver-class-name: 
-    url: 
-    #jdbc-url: 
-    username: 
-    password: 
-    maximum-pool-size: 2
-
+     driver-class-name: org.mariadb.jdbc.Driver
+     url: jdbc:mariadb://unknown.cmoozwqocg37.ap-northeast-2.rds.amazonaws.com:3306/unknown_db?autoReconnection=true
+     jdbc-url: jdbc:mariadb://unknown.cmoozwqocg37.ap-northeast-2.rds.amazonaws.com:3306/unknown_db?autoReconnection=true
+     username: sysadmins
+     password: eWhjaG9pODAzMQ==
+     hikari:
+      maximum-pool-size: 2
+      
 logging:
   level:
     org:

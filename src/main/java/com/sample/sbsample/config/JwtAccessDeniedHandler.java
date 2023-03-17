@@ -17,8 +17,8 @@ import lombok.extern.slf4j.Slf4j;
  * Response에 403이 떨어질만한 에러가 발생할 경우 해당로직을 타게되어, commence라는 메소드를 실행
  */
 
-@Component
 @Slf4j
+@Component
 public class JwtAccessDeniedHandler implements AccessDeniedHandler {
 
 	@Override
