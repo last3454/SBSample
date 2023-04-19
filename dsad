@@ -1,0 +1,66 @@
+[33mcommit 5ff88f55d43427d8469d7491fd46bc11c4d488ed[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/develop[m[33m, [m[1;32mdevelop[m[33m)[m
+Author: choi young hwan <last3454@naver.com>
+Date:   Fri Mar 17 13:59:14 2023 +0900
+
+    User Repo 파일 추가.
+
+[33mcommit 3c741b25754cf0c3c5cb377cbb8baaf489993cb3[m
+Author: choi young hwan <last3454@naver.com>
+Date:   Fri Mar 17 11:22:55 2023 +0900
+
+    queryDsl 설정.
+
+[33mcommit 13b5cfa51c7d842adfa4e2c285439dcfe6934406[m
+Author: choi young hwan <last3454@naver.com>
+Date:   Fri Mar 17 11:19:43 2023 +0900
+
+    테스트1
+
+[33mcommit 014e3d0dea2c25977982d404e5c1a5db9d7fbe82[m
+Merge: f0d1bd1 1f3bbb5
+Author: choi young hwan <last3454@naver.com>
+Date:   Fri Mar 17 11:17:04 2023 +0900
+
+    Merge branch 'master' into develop
+
+[33mcommit f0d1bd189b4b6d5b099fb42ce79cff5b6d24a86f[m
+Author: choi young hwan <last3454@naver.com>
+Date:   Fri Mar 17 11:16:54 2023 +0900
+
+    QUERYDLS 및 JSP 설정.
+
+[33mcommit 1f3bbb548fca15e85984df912d59b4bc7d78de98[m
+Author: choi young hwan <last3454@naver.com>
+Date:   Fri Mar 17 11:13:26 2023 +0900
+
+    QUERYDSL 기능 추가 중.
+
+[33mcommit 99327e753bf02aa86789ed52ac3814d96a7f0ba5[m
+Author: choi young hwan <last3454@naver.com>
+Date:   Fri Mar 17 11:10:33 2023 +0900
+
+    JSP 커밋.
+
+[33mcommit f83f7ef7240acc504ffb2a272bda9a8d05fdae20[m
+Author: choi <66758533+last3454@users.noreply.github.com>
+Date:   Mon Feb 13 09:32:17 2023 +0900
+
+    Delete src/test/java/com/amore/mybeaker directory
+
+[33mcommit 8d4651595a8a13823f2ba0d8fbd136d8a0c60eb8[m
+Author: AC929648\last3 <last3454@naver.com>
+Date:   Fri Feb 10 09:37:32 2023 +0900
+
+    명칭 변경.
+
+[33mcommit 2f35b7e1af9ca6f153d41f11389526caa68edc1c[m
+Author: AC929648\last3 <last3454@naver.com>
+Date:   Fri Feb 10 09:12:31 2023 +0900
+
+    기본 틀 커밋.
+
+[33mcommit c4309301a4d8118c2e5cfe50106139917a8a8bc2[m
+Author: AC929648\last3 <last3454@naver.com>
+Date:   Fri Feb 10 09:08:47 2023 +0900
+
+    first commit
