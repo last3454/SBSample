@@ -17,7 +17,7 @@ public class SbsSampleApplication extends SpringBootServletInitializer {
 		return application.sources(SbsSampleApplication.class);
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) { 
 		SpringApplication.run(SbsSampleApplication.class, args);
 	}
 
